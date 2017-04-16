@@ -22,12 +22,34 @@
 #   pet_shop[:pets].length
 # end
 
-def pets_by_breed(pet_shop, breed)
-  new_array_of_pets = []
+# def pets_by_breed(pet_shop, breed)
+#   new_array_of_pets = []
+#   for pet in pet_shop[:pets]
+#     if pet[:breed] == breed
+#       new_array_of_pets << breed
+#     end 
+#   end
+#   return new_array_of_pets
+# end
+
+def find_pet_by_name(pet_shop, name_to_search)
   for pet in pet_shop[:pets]
-    if pet[:breed] == breed
-      new_array_of_pets << breed
-    end 
+    if pet[:name] == name_to_search
+      return pet
+    end
   end
-  return new_array_of_pets
+    return nil
 end
+
+
+
+
+
+
+
+
+
+
+
+
+
